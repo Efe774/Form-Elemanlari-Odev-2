@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elemanları</title>
+</head>
+<body><!--Başlık Alanı-->
+    <h1>Form Elemanları</h1>
+    <h2>Örenkler</h2>
+    <form>
+        <fieldset> <!--Kişisel Alan-->
+            <legend>Kişisel</legend>
+            <div>
+                <label for="name">İsim:</label></br>
+                <input type="text" id="name">
+            </div>     
+            <div>
+                <label for="surname">Soy İsim:</label></br>
+                <input type="text" id="surname">
+            </div>   
+            <div>
+                <label for="gender">Cinsiyet:</label></br>
+                <input type="radio" name="gender" value="male">Erkek 
+                <input type="radio" name="gender" value="female">kadın
+                <input type="radio" name="gender" value="other">Diğer  
+            </div>
+            <div>
+                <label for="meyve">Favori Meyve:</label></br>
+
+            <select id="meyve">
+                <option value="meyve">Seçiniz..</option>
+                <option value="elma">Elma</option>
+                <option value="muz">Muz</option>
+                <option value="çilek">Çilek</option>
+                <option value="armut">Armut</option>
+            </select>
+
+            </div>
+        </fieldset>
+        <fieldset><!--İletişim Alanı-->
+            <legend>
+                İletişim 
+            </legend>
+            <div>
+                <label for="email">E-Mail:</label></br>
+                <input type="email" id="email">
+            </div>
+            <div>
+            <label for="pass">Şifre:</label></br>
+            <input type="password" id="pass">
+            </div>
+        </fieldset>
+        <fieldset><!--Kullanıcının mesaj yazabileceği bir alan-->
+            <legend>İstek Ve Şikayet</legend>
+            <label for="text">Yazınız:</label></br>
+            <textarea id="text" rows="5" cols="70"></textarea>
+        </fieldset>
+        <button type="submit">Gönder</button>
+    </form>
+</body>
+</html>
